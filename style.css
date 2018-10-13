@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    overflow:hidden;
+}
+.container{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.sendBottom{
+    position: absolute;
+    bottom: 0;
+    height: 108px;
+    width: 100%;
+    border-top: 2px solid black;
+    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#suob6tenie_vuvedi,#sendBtn{
+    
+    font-size: 46px;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.5s;
+    border:3px solid #ccc;
+}
+#sendBtn:active{
+    
+    transition: 0.1s;
+    border: 3px solid rgb(98, 93, 93);
+    border-radius: 5px;
+}
+#sendBtn:focus{
+    outline-width: 0;
+}
+
+#suob6tenie_vuvedi:focus{
+    outline-width: 0;
+    transition: 0.5s;
+    border: 3px solid rgb(98, 93, 93);
+    border-radius: 5px;
+}
+#sendBtn{
+   
+    background-color: lightblue;
+    
+}
+
+.actualChat{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 110px);
+    overflow-x:hidden;
+}
+
+
+.message{
+    font-family: sans-serif;
+    margin-top: 10px;
+   
+    
+    max-width: 300px;
+    border-radius: 10px;
+    height: auto;
+    font-size: 46px;
+    padding: 10px 20px;
+}
+.lqvo{
+    float: left;
+    clear: both;
+    margin-left: 5px;
+    background-color: lightblue;
+}
+.dqsno{
+    float: right;
+    clear: both;
+    margin-right: 5px;
+    background-color: lightgray;
+}
+
+
+@media(max-width: 800px) {
+    
+    #suob6tenie_vuvedi,#sendBtn,.message{
+        font-size: 5.5vw;
+        padding: 5px 10px;
+        }
+    .sendBottom{
+        height:11vw;
+    }
+    .actualChat{
+        height: calc(100vh - 11vw);  
+    } 
+}
