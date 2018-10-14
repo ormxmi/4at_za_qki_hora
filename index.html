@@ -4,11 +4,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
 
     <title>Zdrasti</title>
 </head>
 <body>
-   <div class="container">
+    <div class="overlay">
+        <div class="overlayIcons">
+                <i class="fas fa-palette" id="paletteIcon" onclick="changeColorsDrop('0')"></i>
+        </div>
+        <div class="overlayArrow" onclick="pullDownMenu()">
+                <i class="fas fa-cog" id="settingsIcon"></i>
+        </div>  
+       
+    </div>
+    <div class="chooseColorsOutline" onclick="changeColorsDrop('-100%')">
+        <h1>CVETOVE NA 4ATA</h1>
+        <div class="chooseColors chosen" onclick="changeColors(['lightblue','lightgray',0])">
+            <div class="inner" id="lightblue"></div>
+            <div class="inner" id="lightgray"></div>
+        </div>
+        <div class="chooseColors" onclick="changeColors(['white','black',1,'white'])">
+            <div class="inner" id="white"></div>
+            <div class="inner" id="black"></div>
+        </div>
+        <div class="chooseColors" onclick="changeColors(['white','purple',2,'white'])">
+            <div class="inner" id="white"></div>
+            <div class="inner" id="purple"></div>
+        </div>
+        <div class="chooseColors" onclick="changeColors(['lightgray','pink',3])">
+            <div class="inner" id="lightgray"></div>
+            <div class="inner" id="pink"></div>
+        </div>
+    </div>  
+   <div class="container" onclick="pullDownMenu('close')">
         <div class="sendBottom">
             <div class="form">
                 <input type="text" id="suob6tenie_vuvedi" placeholder="Vuvedi suob6tenie">
@@ -18,32 +48,32 @@
         <div class="actualChat" >
             
                     <div class="messageContainer lqvo">
-                        <p class="senderName">Wobba do</p>
-                        <p class="message lightblue">Zdrasti</p>
+                        <p class="senderName">Wobba&nbsp;dodod</p>
+                        <p class="message send">Zdrasti</p>
                     </div>
 
                     <div class="messageContainer dqsno">
                         <p class="senderName">Me</p>
-                        <p class="message lightgray">Zdrasti</p>
+                        <p class="message own">Zdrasti</p>
                     </div>
 
                     <div class="messageContainer lqvo">
-                        <p class="senderName">Wobba do</p>
-                        <p class="message lightblue">Zdasdasdasdasdasdasrasti</p>
+                        <p class="senderName">Wobba&nbsp;dodod</p>
+                        <p class="message send">Zdasdasdasdasdasdasrasti</p>
                     </div>
                     
     
                         <div class="messageContainer dqsno">
                             <p class="senderName">Me</p>
-                            <p class="message lightgray">Zdrasti</p>
+                            <p class="message own">Zdrasti</p>
                         </div> <div class="messageContainer lqvo">
-                                <p class="senderName">Wooba de</p>
-                                <p class="message lightblue">Zdrasti</p>
+                                <p class="senderName">Wooba&nbsp;dodod</p>
+                                <p class="message send">Zdrasti</p>
                             </div>
         
                             <div class="messageContainer dqsno">
                                 <p class="senderName">Me</p>
-                                <p class="message lightgray">Zdrasti</p>
+                                <p class="message own">Zdrasti</p>
                             </div>
         </div>
    </div>

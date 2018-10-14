@@ -7,6 +7,109 @@ body{
     background-color: lightblue;
     overflow:hidden;
 }
+.overlay{
+    position: absolute;
+    z-index: 1;
+    right: 2px;
+    top: 0;
+    height: 200px;
+    width: 30px;
+    transform: translateY(-85%);
+    transition: 0.5s ease-out;
+}
+.overlayIcons{
+    height: 85%;
+    width: 100%;
+    background-color:rgba(1, 1, 1,0.6);
+}
+.inner{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    z-index: 5;
+}
+#lightblue{
+    background-color: lightblue;
+}
+#lightgray{
+    background-color: lightgray;
+    float: right;
+}
+#white{
+    background-color: white;
+   
+}
+#black{
+    background-color: black;
+    float: right;
+}
+#purple{
+    background-color: purple;
+    float: right;
+}
+#pink{
+    background-color: pink;
+}
+.overlayArrow{
+    
+    height: 15%;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    
+}
+.overlayArrow:active{
+    transform: rotateZ(1080deg);
+}
+#paletteIcon{
+    display: block;
+    padding: 6px;
+    font-size: 21px;
+    color: white;
+    position: absolute;
+    
+    margin-top: 7px;
+}
+.chooseColorsOutline>h1{
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+}
+#settingsIcon{
+    font-size: 20px;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 6px;
+    margin-top: 5px;
+}
+.chooseColorsOutline{
+   
+    position: absolute;
+    top: -100%;
+    z-index: 1;
+    height: 100%;
+    width: 100%;;
+    background-color: rgba(0, 0, 0,0.7);
+    transition: 0.3s;
+}
+.chooseColors{
+    display: block;
+    z-index: 3;
+    height: 14vh;
+    width: 50vw;
+    background-color: yellow;
+    margin-top: 5vh;
+    margin-left: calc((100vw - 50vw)/2);
+    
+}
+.chosen{
+    z-index: 3;
+    border: 3px solid white;
+    border-radius: 3px;
+}
 .container{
     position: relative;
     max-width: 800px;
@@ -72,14 +175,7 @@ body{
     border-radius: 10px;
     position: relative;
 }
-.senderName{
-    position: absolute;
-    color:darkgrey;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    top: -20px;
-    left: 10px;
-}
+
 .message{
     font-family: sans-serif;
     
@@ -89,6 +185,16 @@ body{
     word-wrap: break-word;
     font-size: 46px;
     padding: 10px 20px;
+}
+.senderName{
+    position: absolute;
+    color:darkgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    top: -20px;
+    left: 10px;
+    word-break: keep-all;
+    overflow: visible;
 }
 .lqvo{
     float: left;
@@ -100,13 +206,15 @@ body{
     clear: both;
     margin-right: 5px;
 }
-.lightblue{
+.send{
     background-color: lightblue;
     border-radius: 10px;
+    border: 1px solid black;
 }
-.lightgray{
+.own{
     background-color: lightgray;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 
@@ -125,4 +233,26 @@ body{
     .message{
         max-width: 350px;
     }
+    .senderName{
+        font-size: 17px;
+    }
+}
+@media(max-width: 390px) {
+    #suob6tenie_vuvedi,#sendBtn,.message{
+        font-size: 5vw;
+        padding: 5px 10px;
+        }
+    .sendBottom{
+            height:14vw;
+        }
+    .actualChat{
+            height: calc(100vh - 14vw);  
+        } 
+    .message{
+            max-width: 200px;
+        }
+    .senderName{
+            font-size: 13.5px;
+            top: -15px;
+        }
 }
