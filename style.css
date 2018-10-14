@@ -136,12 +136,12 @@ body{
     padding: 10px 20px;
     border: none;
     transition: 0.5s;
-    border:3px solid #ccc;
+    border:1px solid #ccc;
 }
 #sendBtn:active{
     
     transition: 0.1s;
-    border: 3px solid rgb(98, 93, 93);
+    border: 1px solid rgb(98, 93, 93);
     border-radius: 5px;
 }
 #sendBtn:focus{
@@ -151,7 +151,7 @@ body{
 #suob6tenie_vuvedi:focus{
     outline-width: 0;
     transition: 0.5s;
-    border: 3px solid rgb(98, 93, 93);
+    border: 1px solid rgb(98, 93, 93);
     border-radius: 5px;
 }
 #sendBtn{
