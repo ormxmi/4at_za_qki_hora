@@ -27,7 +27,7 @@ function sendMsg(){
             
         document.getElementById("suob6tenie_vuvedi").value = "";
         var newMsg = document.createElement("P");
-        newMsg.setAttribute("class","message lightgray");
+        newMsg.setAttribute("class","message own");
         var newMsgNode = document.createTextNode(msg);
         newMsg.appendChild(newMsgNode);
         div_messageContainer.appendChild(newMsg);
